@@ -82,3 +82,46 @@ window.onscroll = function () {
     bmenu.classList.remove("bmenu_ind");
   }
 };
+
+const img1 = document.querySelector("#image1");
+const img2 = document.querySelector("#image2");
+const img3 = document.querySelector("#image3");
+
+img1.addEventListener("mouseover", bytImg);
+
+function bytImg() {
+  img1.firstElementChild.classList.add("hide");
+  img1.lastElementChild.classList.remove("hide");
+  img1.addEventListener("mouseout", bytTilbage);
+}
+
+function bytTilbage() {
+  img1.firstElementChild.classList.remove("hide");
+  img1.lastElementChild.classList.add("hide");
+}
+
+img2.addEventListener("mouseover", bytImg2);
+
+function bytImg2() {
+  img2.firstElementChild.classList.add("hide");
+  img2.lastElementChild.classList.remove("hide");
+  img2.addEventListener("mouseout", bytTilbage2);
+}
+
+function bytTilbage2() {
+  img2.firstElementChild.classList.remove("hide");
+  img2.lastElementChild.classList.add("hide");
+}
+
+img3.addEventListener("mouseover", bytImg3);
+
+function bytImg3() {
+  img3.firstElementChild.classList.add("hide");
+  img3.lastElementChild.classList.remove("hide");
+  img3.addEventListener("mouseout", bytTilbage3);
+}
+
+function bytTilbage3() {
+  img3.firstElementChild.classList.remove("hide");
+  img3.lastElementChild.classList.add("hide");
+}

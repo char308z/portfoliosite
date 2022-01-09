@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+img {
+  width: 100%;
+}
+
 html {
   scroll-behavior: smooth;
   /* scroll-padding-top: 90px; */
@@ -185,14 +189,24 @@ h3 {
 
 h4 {
   font-family: justus-pro, monospace;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   text-decoration: none;
   font-size: 1rem;
   max-width: 65ch;
   color: #0b0a0a;
   line-height: 1.5;
-  padding: 4% 0% 2% 0%;
+}
+
+h5 {
+  font-family: justus-pro, monospace;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 0.8rem;
+  max-width: 65ch;
+  color: #0b0a0a;
+  line-height: 1.5;
 }
 
 p {
@@ -204,7 +218,7 @@ p {
   max-width: 65ch;
   color: #0b0a0a;
   line-height: 1.5;
-  padding: 4% 0% 2% 4%;
+  padding: 0% 0% 2% 2%;
 }
 
 a {
@@ -233,11 +247,6 @@ a {
     color: #0b0a0a;
   }
 
-  footer {
-    grid-template-columns: repeat(11, 1fr);
-    font-size: 1rem;
-  }
-
   footer a {
     font-size: 1rem;
   }
@@ -260,5 +269,22 @@ a {
   #navn {
     grid-column: 9/12;
     grid-row: 4/5;
+  }
+  h2 {
+    font-size: 2srem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+
+  p {
+    max-width: 60ch;
   }
 }
