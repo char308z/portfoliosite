@@ -16,7 +16,7 @@
       <div id="logo">
         <a href="index.html"
           ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 135">
-            <g class="logo_ommig" data-name="Layer 2">
+            <g id="logo_menu" class="logo_ind" data-name="Layer 2">
               <path
                 class="cls-1"
                 d="M88.78,67.29c0,1.44-.83,2.4-1.19,2.4-.73,0-1-1-1.32-2.52-1.45-6.84-4.08-7.56-10.8-8.16-4.32-.36-17-.12-22.16-.12-.84,0-1.53,1.2-1.56,2.16-.3,8.48-.53,13.8-.36,28.52a22.85,22.85,0,0,0,8.67-2.52,19.62,19.62,0,0,0,8.76-8.91c1.55-3.45,1.93-4.24,2.89-4.21.6,0,.79,1.64.64,2.58-.18,2-.71,7.38-.89,9.13-.16,1.2-1.77,2.9-3.23,3.66a43.32,43.32,0,0,1-16.82,4.49c0,.85,0,1.83,0,3-.12,8.4-.42,16.83.24,25.2.48,6.12.84,6.84,7.43,7.92,1.57.24,2.76.84,2.76,1.56s-1.43,1.32-2.63,1.32c-2.28,0-7.44-.36-12.36-.36-4.68,0-11.28.36-13.32.36-1.68,0-2.52-.48-2.52-1.08s.72-1,2.16-1.44c6.48-1.32,7.08-2.64,7.8-7.8.51-3.88.67-17,.71-28.7-11.59-1-24.14-6.15-32-17.1C3.58,68.28.93,57,1.25,47.06,1.69,33.07,7,19.9,19.43,10.87a45.92,45.92,0,0,1,29-8.65A65.68,65.68,0,0,1,65.71,5.46,14.06,14.06,0,0,0,71.07,6.7c.6,0,1.27,1.53,1.13,2.06a137,137,0,0,0,0,13.74c.17,2.16-.46,3.22-1.18,3.19-.48,0-1-1.11-1.47-2.87-1.61-6.11-3.57-8.6-7-11.4-3.15-2.93-9.3-5.95-17.1-6.19-19.91-.63-31.56,15-32.26,37C13,52.41,14.42,59.46,16.64,65.32c5.75,14.68,16,21.77,25,23.78V87.81c0-7.08-.12-16-.36-21.36-.24-6.6-1-8.28-7.44-9-1.08-.12-2.4-.36-2.4-1.32s1.32-1.2,3.36-1.2c3.36,0,7.8.36,11.88.36H78.83c3.72,0,7.56-.72,8.52-.72a1.91,1.91,0,0,1,1.2,1.56C88.55,59.49,88.78,63.81,88.78,67.29Z"
@@ -24,8 +24,9 @@
             </g></svg
         ></a>
       </div>
+      <button id="bmenu" class="toggle-btn">☰</button>
       <nav>
-        <ul class="menu" id="index">
+        <ul class="menu" id="ind">
           <li><a href="om_mig.html">om mig</a></li>
           <li><a href="web.html">web</a></li>
           <li><a href="ux.html">ux</a></li>
@@ -36,31 +37,82 @@
     </header>
     <main>
       <section id="first_section">
-        <h2>Om mig</h2>
-        <div class="hr_right"><hr /></div>
-        <div id="s1_indhold">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut nostrum
-            officiis recusandae corporis inventore fugiat, possimus quibusdam
-            deleniti exercitationem. Eaque, maxime quae quas cum fugiat hic quod
-            quaerat quia? Et numquam quae, aperiam autem saepe natus
-            consequuntur est eos tempore ex necessitatibus nam asperiores
-            deleniti temporibus animi eligendi quaerat ratione alias, provident
-            sapiente veniam ipsam earum consectetur! Doloremque explicabo a
-            ratione consectetur aliquam libero id alias quisquam, architecto
-            iure, facilis odit voluptas optio officia unde nobis eius? Quam
-            vitae sed minima, labore quae omnis minus ipsam architecto assumenda
-            similique, dolor sint ratione voluptatem praesentium aliquid sit nam
-            voluptas saepe dolores. Hic mollitia delectus consectetur nihil
-            nobis perspiciatis beatae adipisci excepturi labore. Atque ut
-            reprehenderit voluptate nesciunt! Eaque ex libero, error rerum odit
-            inventore maxime hic.
+        <div id="s1_col2">
+          <h2>Om mig</h2>
+          <div class="hr_right"><hr /></div>
+          <p class="topbund_pad">
+            Hvem er jeg? - Jeg er 23 år gammel, og kommer oprindeligt fra den
+            vestjyske by Esbjerg, og jeg har for et års tid siden trukket
+            rødderne op, for at flytte til det vidunderlige København. Jeg har
+            været på den kunsteriske højskole Engelsholm mere eller mindre hele
+            2020 - hvis man ser bort fra det corona ramte måneder, der lukke
+            hele landet ned. På Engelsholm brugt jeg min tid på at fordybe mig i
+            billedkunst og grafiksarbejde. Jeg har en stor kærlighed til kunst,
+            madlavning og at drikke en god kop kaffe. Derudover kan jeg godt
+            lide at være medarrangør og have fingeren på pulsen på mine
+            omgivelser, så jeg ser frem til at skulle være rus-vejleder for det
+            kommende hold af MMD studerende.
           </p>
+        </div>
+
+        <div id="s1_col1">
           <div id="bg_path">
-           <div id="billede_container"> 
-             <img id="b1" src="/billeder/om_billeder/b1.webp" alt="mig" />
-              </div>
-            </a>
+            <!-- <div id="billede_container"> -->
+            <img id="b1" src="/billeder/om_mig_billeder/b1.webp" alt="mig" />
+            <!-- </div> -->
+          </div>
+        </div>
+      </section>
+      <section id="second_section">
+        <h2>CV</h2>
+        <div class="hr_left"><hr /></div>
+        <p class="topbund_pad">
+          Her kan du se den rejse jeg har være på i forhold til uddannelse,
+          erhvervserfaring og almen dannelse. Desuden kan du her se hvilke
+          programmer jeg indtil videre har fået kompetencer indenfor gennem min
+          uddanelse på KEA.
+        </p>
+        <div id="kompetancer" class="boks">
+          <h3>kompetencer</h3>
+          <ul id="liste">
+            <li>Adobe programmer</li>
+            <ul id="under_liste">
+              <li>XD</li>
+              <li>Photoshop</li>
+              <li>Illustrator</li>
+              <li>Audition</li>
+              <li>Primere Pro</li>
+            </ul>
+            <li>Visual Studio Code</li>
+            <li>FileZilla</li>
+          </ul>
+        </div>
+        <div id="s2_indholds_wrapper">
+          <div id="timeline">
+            <img src="/billeder/om_mig_billeder/timeline.svg" alt="tidslinje" />
+          </div>
+          <div id="s2_indhold">
+            <h5 id="y1" class="text_end">2004 - 2014</h5>
+            <h5 id="y2" class="text_end">2015 - 2018</h5>
+            <h5 id="y3" class="text_end">2018 - 2020</h5>
+            <h5 id="y4" class="text_end">2018 - 2020</h5>
+            <h5 id="y5" class="text_end">Foråret 2020</h5>
+            <h5 id="y6" class="text_end">August 2020</h5>
+            <h5 id="y7" class="text_end">Efteråret 2020</h5>
+            <h5 id="y8" class="text_end">2021 -</h5>
+            <h5 id="y9" class="text_end">2021 -</h5>
+            <h5 id="y10" class="text_end">2021 - 2023</h5>
+
+            <h5 id="p1">Blåbjerggårdskolen</h5>
+            <h5 id="p2">Rybners Gymnasium</h5>
+            <h5 id="p3">Pædagogmedhjælper | Børnebakken</h5>
+            <h5 id="p4">Værtinde | Skoda Autocentralen Esbjerg</h5>
+            <h5 id="p5">Engelsholm Højskole | Billedkunstlinjen</h5>
+            <h5 id="p6">Bogbinder kursus| Engelsholm Højskole</h5>
+            <h5 id="p7">Engelsholm Højskole | Billedkunstlinjen</h5>
+            <h5 id="p8">Tjener | Hatoba Sushi</h5>
+            <h5 id="p9">Køkkenassisten & tjener | Folkets Madhus</h5>
+            <h5 id="p10">MMD | KEA</h5>
           </div>
         </div>
       </section>
