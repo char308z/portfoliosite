@@ -1,0 +1,58 @@
+body,
+header {
+  background-color: #faf0dc;
+}
+.logo_port {
+  fill: #9b6a00;
+}
+
+#logo:hover .logo_port {
+  fill: #da9604;
+}
+
+/* li {
+  font-family: macho, monospace;
+  color: #9b6a00;
+}
+
+.boks1 {
+  font-family: macho, monospace;
+  color: #9b6a00;
+  background-color: #d7e2f5;
+  padding: 4%;
+  margin: 4%;
+} */
+
+header a,
+a {
+  color: #9b6a00;
+}
+
+header a:hover {
+  color: #da9604;
+}
+
+/* burgermenu */
+
+@media (max-width: 800px) {
+  .toggle-btn {
+    color: #9b6a00;
+  }
+}
+
+footer {
+  background-color: #fadfa5;
+  color: #9b6a00;
+}
+
+footer a {
+  color: #9b6a00;
+}
+#navn {
+  color: #9b6a00;
+}
+
+footer hr,
+hr {
+  border-color: #9b6a00;
+}
