@@ -134,7 +134,7 @@ footer hr {
 
 .mask_text {
   /*Her indsættes baggrundsbillede vha. background-image og background-size */
-  background-image: url(billeder/navn_billede.jpg);
+  background-image: url(billeder/navn_billede.webp);
   background-size: 180%;
   background-position: -165px -65px;
 
