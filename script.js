@@ -39,7 +39,7 @@ window.onscroll = function () {
   var top = window.scrollY;
   console.log(top);
 
-  if (top >= 820) {
+  if (top >= 700) {
     header.classList.add("color_s2");
     logo.classList.add("logo_web");
     bmenu.classList.add("bmenu_web");
@@ -49,7 +49,7 @@ window.onscroll = function () {
     bmenu.classList.remove("bmenu_web");
   }
 
-  if (top >= 1630) {
+  if (top >= 1330) {
     header.classList.remove("color_s2");
     header.classList.add("color_s3");
     logo.classList.add("logo_ux");
@@ -60,7 +60,7 @@ window.onscroll = function () {
     bmenu.classList.remove("bmenu_ux");
   }
 
-  if (top >= 2450) {
+  if (top >= 2082) {
     header.classList.remove("color_s3");
     header.classList.add("color_s4");
     logo.classList.add("logo_ani");
@@ -71,7 +71,7 @@ window.onscroll = function () {
     bmenu.classList.remove("bmenu_ani");
   }
 
-  if (top >= 3270) {
+  if (top >= 2646) {
     header.classList.remove("color_s4");
     header.classList.add("color_s5");
     logo.classList.add("logo_ind");
@@ -82,7 +82,7 @@ window.onscroll = function () {
     bmenu.classList.remove("bmenu_ind");
   }
 
-  if (top >= 4080) {
+  if (top >= 3440) {
     header.classList.remove("color_s5");
     header.classList.add("color_s6");
     logo.classList.add("logo_port");
