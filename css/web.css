@@ -14,12 +14,6 @@ header {
   z-index: 1;
 }
 
-header #logo {
-  width: 30px;
-  padding-top: 8px;
-  padding-left: 8px;
-}
-
 .logo_web {
   fill: #49296a;
 }
