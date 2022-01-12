@@ -400,7 +400,7 @@ footer hr {
   }
 
   #splashbillede1 {
-    background-image: url(../billeder/navn_billede.jpg);
+    background-image: url(../billeder/navn_billede.webp);
     background-size: cover;
     background-position: 107%;
     clip-path: url(#s1);
