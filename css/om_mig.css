@@ -288,6 +288,7 @@ hr {
   #first_section #s1_col2 p {
     grid-row: 3/4;
   }
+
   #s1_col1 {
     aspect-ratio: 635/620;
     grid-column: 2/3;
