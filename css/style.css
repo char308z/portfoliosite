@@ -311,10 +311,22 @@ a {
     max-width: 60ch;
   }
 
-  .knap_animation {
-    animation: zoom_in_out_kf;
+  .zoom_in_out {
+    animation-name: zoom_in_out_kf;
     animation-duration: 1s;
     animation-iteration-count: 1;
     animation-fill-mode: both;
+  }
+}
+
+@keyframes zoom_in_out_kf {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
   }
 }
