@@ -627,4 +627,15 @@ footer hr {
     animation-iteration-count: 1;
     animation-fill-mode: both;
   }
+  @keyframes zoom_in_out_kf {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.25);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 }
