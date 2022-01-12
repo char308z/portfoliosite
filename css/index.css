@@ -134,7 +134,7 @@ footer hr {
 
 .mask_text {
   /*Her indsættes baggrundsbillede vha. background-image og background-size */
-  background-image: url(/billeder/navn_billede.jpg);
+  background-image: url(billeder/navn_billede.jpg);
   background-size: 180%;
   background-position: -165px -65px;
 
@@ -158,7 +158,7 @@ footer hr {
 }
 
 #knap1_sprite {
-  background-image: url(/svg/knap1.svg);
+  background-image: url(svg/knap1.svg);
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -193,7 +193,7 @@ footer hr {
   width: 80%;
 }
 #knap2_sprite {
-  background-image: url(/svg/web_knap.svg);
+  background-image: url(svg/web_knap.svg);
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -228,7 +228,7 @@ footer hr {
   width: 110%;
 }
 #knap3_sprite {
-  background-image: url(/svg/ux_knap1.svg);
+  background-image: url(svg/ux_knap1.svg);
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -262,7 +262,7 @@ footer hr {
   width: 80%;
 }
 #knap4_sprite {
-  background-image: url(/svg/ani_knap.svg);
+  background-image: url(svg/ani_knap.svg);
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -299,7 +299,7 @@ footer hr {
   width: 100%;
 }
 #knap5_sprite {
-  background-image: url(/svg/ind_knap1.svg);
+  background-image: url(svg/ind_knap1.svg);
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -333,7 +333,7 @@ footer hr {
   width: 80%;
 }
 #knap6_sprite {
-  background-image: url(/svg/knap6.svg);
+  background-image: url(svg/knap6.svg);
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -400,7 +400,7 @@ footer hr {
   }
 
   #splashbillede1 {
-    background-image: url(/billeder/navn_billede.jpg);
+    background-image: url(billeder/navn_billede.jpg);
     background-size: cover;
     background-position: 107%;
     clip-path: url(#s1);
@@ -440,7 +440,7 @@ footer hr {
   }
 
   #splashbillede2 {
-    background-image: url(/billeder/web_billeder/web_b1.webp);
+    background-image: url(billeder/web_billeder/web_b1.webp);
     background-size: 117%;
     background-position-x: -47%;
     background-position-y: 137%;
@@ -483,7 +483,7 @@ footer hr {
   }
 
   #splashbillede3 {
-    background-image: url(/billeder/ux_billeder/ux_b1.webp);
+    background-image: url(billeder/ux_billeder/ux_b1.webp);
     background-size: cover;
     width: 89%;
     height: 70%;
@@ -524,7 +524,7 @@ footer hr {
   }
 
   #splashbillede4 {
-    background-image: url(/billeder/ani_billeder/b1.webp);
+    background-image: url(billeder/ani_billeder/b1.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 56%;
@@ -566,7 +566,7 @@ footer hr {
   }
 
   #splashbillede5 {
-    background-image: url(/billeder/ind_billeder/ind_b1.webp);
+    background-image: url(billeder/ind_billeder/ind_b1.webp);
     background-size: cover;
     background-position: 51%;
     width: 104%;
@@ -607,7 +607,7 @@ footer hr {
   }
 
   #splashbillede6 {
-    background-image: url(/billeder/port_billeder/port_b1.webp);
+    background-image: url(billeder/port_billeder/port_b1.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0%;

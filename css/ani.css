@@ -71,7 +71,7 @@ footer hr {
 }
 
 #knap_sprite {
-  background-image: url(/svg/ani_knap.svg);
+  background-image: url(svg/ani_knap.svg);
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -121,7 +121,7 @@ footer hr {
   }
 
   #knap_sprite {
-    background-image: url(/svg/ani_knap.svg);
+    background-image: url(svg/ani_knap.svg);
     background-size: cover;
     width: 100%;
     height: 100%;
