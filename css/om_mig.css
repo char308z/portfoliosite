@@ -2,11 +2,11 @@ body {
   background-color: #fdede7;
 }
 
-.logo_ommig {
+.logo_om {
   fill: #572723;
 }
 
-#logo:hover .logo_ommig {
+#logo:hover .logo_om {
   fill: #96413a;
 }
 

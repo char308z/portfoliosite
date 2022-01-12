@@ -300,4 +300,13 @@ hr {
     width: 100%;
     height: 100%;
   }
+
+  #ind_knap1:hover,
+  #ind_knap2:hover,
+  #ind_knap3:hover {
+    animation: zoom_in_out_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+  }
 }

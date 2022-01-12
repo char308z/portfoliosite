@@ -81,6 +81,17 @@ window.onscroll = function () {
     logo.classList.remove("logo_ind");
     bmenu.classList.remove("bmenu_ind");
   }
+
+  if (top >= 4080) {
+    header.classList.remove("color_s5");
+    header.classList.add("color_s6");
+    logo.classList.add("logo_port");
+    bmenu.classList.add("bmenu_port");
+  } else {
+    header.classList.remove("color_s6");
+    logo.classList.remove("logo_port");
+    bmenu.classList.remove("bmenu_port");
+  }
 };
 
 const img1 = document.querySelector("#image1");

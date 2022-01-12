@@ -51,6 +51,18 @@
   color: #405233;
 }
 
+.color_s6 {
+  background-color: #faf0dc;
+}
+
+.logo_port {
+  fill: #9b6a00;
+}
+
+.bemnu_port {
+  color: #9b6a00;
+}
+
 .hr_left {
   grid-column: 1/6;
   grid-row: 2;
@@ -65,24 +77,38 @@
   color: #0b0a0a;
 }
 
-/* footer farver */
+/* footer farver for index */
 
 #info,
 a,
-#text {
-  color: #405233;
+#text,
+#navn {
+  color: #9b6a00;
+}
+footer {
+  background-color: #faf0dc;
+}
+footer hr {
+  border-color: #9b6a00;
 }
 
-#first_section,
+#first_section {
+  display: grid;
+  grid-template-columns: 0.25fr 1fr 1fr 1fr 0.25fr;
+  grid-template-rows: repeat(4, 1fr);
+  padding-top: 4%;
+  height: 100vh;
+}
+
 #second_section,
 #third_section,
 #fourth_section,
-#fifth_section {
+#fifth_section,
+#sixth_section {
   display: grid;
-  grid-template-columns: 10px 1fr 1fr 1fr 10px;
-  grid-template-rows: repeat(5, 1fr);
-  padding-top: 4%;
-  height: 100vh;
+  grid-template-columns: 0.25fr 1fr 1fr 1fr 0.25fr;
+  grid-template-rows: repeat(4, auto);
+  padding: 10% 0%;
 }
 
 /* first_section */
@@ -101,7 +127,8 @@ a,
 #splash_wrapper2,
 #splash_wrapper3,
 #splash_wrapper4,
-#splash_wrapper5 {
+#splash_wrapper5,
+#splash_wrapper6 {
   display: none;
 }
 
@@ -127,7 +154,7 @@ a,
 
 #knap1_container {
   aspect-ratio: 205/130;
-  width: 45%;
+  width: 50%;
 }
 
 #knap1_sprite {
@@ -149,7 +176,7 @@ a,
 }
 #second_section p {
   grid-column: 2/4;
-  grid-row: 2/4;
+  grid-row: 2/3;
   padding-left: 4%;
   padding-top: 5%;
 }
@@ -158,16 +185,15 @@ a,
   align-self: center;
   padding-left: 25%;
   grid-column: 3/5;
-  grid-row: 4/6;
+  grid-row: 4/5;
 }
 
 #knap2_container {
-  aspect-ratio: 240.007/240.702;
+  aspect-ratio: 210/125;
   width: 80%;
-  /* position: absolute; */
 }
 #knap2_sprite {
-  background-image: url(/svg/knap2.svg);
+  background-image: url(/svg/web_knap.svg);
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -184,24 +210,25 @@ a,
 }
 #third_section p {
   grid-column: 3/5;
-  grid-row: 2/4;
+  grid-row: 2/3;
   padding-left: 4%;
   padding-top: 5%;
 }
 
 #knap3 {
   grid-column: 2/3;
-  grid-row: 4/6;
+  grid-row: 3/4;
   padding-left: 10%;
   align-self: center;
+  width: 130%;
 }
 
 #knap3_container {
-  aspect-ratio: 191.497/187.374;
+  aspect-ratio: 210/105;
   width: 110%;
 }
 #knap3_sprite {
-  background-image: url(/svg/knap3.svg);
+  background-image: url(/svg/ux_knap1.svg);
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -231,12 +258,11 @@ a,
 }
 
 #knap4_container {
-  aspect-ratio: 240.007/240.702;
+  aspect-ratio: 180/95;
   width: 80%;
-  /* position: absolute; */
 }
 #knap4_sprite {
-  background-image: url(/svg/knap4.svg);
+  background-image: url(/svg/ani_knap.svg);
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -262,32 +288,75 @@ a,
 
 #knap5 {
   grid-column: 2/3;
-  grid-row: 4/6;
+  grid-row: 4/5;
   padding-left: 10%;
   align-self: center;
+  width: 130%;
 }
 
 #knap5_container {
-  aspect-ratio: 191.497/187.374;
-  width: 110%;
+  aspect-ratio: 210/125;
+  width: 100%;
 }
 #knap5_sprite {
-  background-image: url(/svg/knap5.svg);
+  background-image: url(/svg/ind_knap1.svg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* sixth_section */
+#sixth_section {
+  background-color: #faf0dc;
+}
+#sixth_section h2 {
+  grid-column: 2/4;
+  grid-row: 1/2;
+  align-self: end;
+}
+#sixth_section p {
+  grid-column: 2/4;
+  grid-row: 2/4;
+  padding-left: 4%;
+  padding-top: 5%;
+}
+
+#knap6 {
+  align-self: center;
+  padding-left: 25%;
+  grid-row: 4/5;
+  grid-column: 3/5;
+}
+
+#knap6_container {
+  aspect-ratio: 210/140;
+  width: 80%;
+}
+#knap6_sprite {
+  background-image: url(/svg/knap6.svg);
   background-size: cover;
   width: 100%;
   height: 100%;
 }
 
 @media (min-width: 1200px) {
-  #first_section,
   #second_section,
   #third_section,
   #fourth_section,
-  #fifth_section {
+  #fifth_section,
+  #sixth_section {
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(5, auto);
     padding-top: 4%;
+    overflow-x: hidden;
+  }
+
+  #first_section {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: repeat(5, 7.5rem);
+    /* padding-top: 4%; */
   }
   .hr_right {
     grid-column: 4/10;
@@ -339,11 +408,6 @@ a,
     height: 100%;
   }
 
-  #splashbillede1:hover {
-    clip-path: url(#s1h);
-    transition: ease-in 2s;
-  }
-
   /* 2 section */
 
   #second_section h2 {
@@ -361,8 +425,7 @@ a,
   #knap2 {
     align-self: center;
     padding-left: 25%;
-    grid-column: 3/5;
-    grid-row: 4/6;
+    grid-row: 3/6;
   }
 
   #knap2_container {
@@ -370,7 +433,7 @@ a,
   }
 
   #splash_wrapper2 {
-    aspect-ratio: 465/475;
+    aspect-ratio: 540/395;
     display: unset;
     grid-column: 6/9;
     grid-row: 2/5;
@@ -378,16 +441,12 @@ a,
 
   #splashbillede2 {
     background-image: url(/billeder/web_billeder/web_b1.webp);
-    background-size: cover;
-    background-position: 107%;
+    background-size: 117%;
+    background-position-x: -47%;
+    background-position-y: 137%;
     width: 100%;
     height: 100%;
     clip-path: url(#s2);
-  }
-
-  #splashbillede2:hover {
-    transition: ease-in-out 5s;
-    clip-path: url(#s2h);
   }
 
   /* 3 section */
@@ -408,7 +467,8 @@ a,
     align-self: center;
     padding-left: 25%;
     grid-column: 7/9;
-    grid-row: 4/6;
+    grid-row: 3/5;
+    width: 100%;
   }
 
   #knap3_container {
@@ -416,24 +476,19 @@ a,
   }
 
   #splash_wrapper3 {
-    aspect-ratio: 375/475;
+    aspect-ratio: 355/370;
     display: unset;
     grid-column: 2/5;
-    grid-row: 1/5;
+    grid-row: 2/5;
   }
 
   #splashbillede3 {
     background-image: url(/billeder/ux_billeder/ux_b1.webp);
     background-size: cover;
-    background-position: 107%;
-    width: 100%;
-    height: 100%;
+    width: 89%;
+    height: 70%;
     clip-path: url(#s3);
-  }
-
-  #splashbillede3:hover {
-    transform: ease-in-out 5s;
-    clip-path: url(#s3h);
+    background-position-x: 100%;
   }
 
   /* 4 section */
@@ -454,7 +509,7 @@ a,
     align-self: center;
     padding-left: 25%;
     grid-column: 3/5;
-    grid-row: 4/6;
+    grid-row: 4/5;
   }
 
   #knap4_container {
@@ -462,7 +517,7 @@ a,
   }
 
   #splash_wrapper4 {
-    aspect-ratio: 465/475;
+    aspect-ratio: 398.336/249.057;
     display: unset;
     grid-column: 6/9;
     grid-row: 2/5;
@@ -472,14 +527,9 @@ a,
     background-image: url(/billeder/ani_billeder/b1.webp);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0%;
+    background-position: 56%;
     width: 100%;
     height: 100%;
-    clip-path: url(#s4h);
-  }
-
-  #splashbillede4:hover {
-    transition: ease-in-out 5s;
     clip-path: url(#s4);
   }
 
@@ -501,7 +551,7 @@ a,
     align-self: center;
     padding-left: 25%;
     grid-column: 7/9;
-    grid-row: 4/6;
+    grid-row: 3/6;
   }
 
   #knap5_container {
@@ -509,23 +559,72 @@ a,
   }
 
   #splash_wrapper5 {
-    aspect-ratio: 465/475;
+    aspect-ratio: 460/490;
     display: unset;
     grid-column: 2/5;
-    grid-row: 1/5;
+    grid-row: 2/5;
   }
 
   #splashbillede5 {
     background-image: url(/billeder/ind_billeder/ind_b1.webp);
     background-size: cover;
-    background-position: 107%;
-    width: 100%;
+    background-position: 51%;
+    width: 104%;
     height: 100%;
-    clip-path: url(#s3);
+    clip-path: url(#s5);
   }
 
-  #splashbillede5:hover {
-    transition: ease-in-out 5s;
-    clip-path: url(#s3h);
+  /* 6 section */
+
+  #sixth_section h2 {
+    grid-column: 2/5;
+    grid-row: 1/2;
+    align-self: end;
+  }
+  #sixth_section p {
+    grid-column: 2/4;
+    grid-row: 2/4;
+    padding-left: 4%;
+    padding-top: 5%;
+  }
+
+  #knap6 {
+    align-self: center;
+    padding-left: 25%;
+    grid-column: 3/5;
+    grid-row: 3/5;
+  }
+
+  #knap6_container {
+    width: 80%;
+  }
+
+  #splash_wrapper6 {
+    aspect-ratio: 515/405;
+    display: unset;
+    grid-column: 6/9;
+    grid-row: 2/5;
+  }
+
+  #splashbillede6 {
+    background-image: url(/billeder/port_billeder/port_b1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    width: 100%;
+    height: 100%;
+    clip-path: url(#s6);
+  }
+
+  #knap1:hover,
+  #knap2:hover,
+  #knap3:hover,
+  #knap4:hover,
+  #knap5:hover,
+  #knap6:hover {
+    animation: zoom_in_out_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
   }
 }

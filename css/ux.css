@@ -83,7 +83,7 @@ hr {
   grid-template-rows: repeat(5, 1fr);
 }
 
-#b1 {
+#ux_b1 {
   grid-column: 1/5;
   grid-row: 1/5;
 }
@@ -200,7 +200,7 @@ hr {
     padding-top: 4%;
   }
 
-  #b1 {
+  #ux_b1 {
     grid-column: 1/5;
     grid-row: 1/5;
   }
@@ -443,5 +443,13 @@ hr {
     background-size: cover;
     width: 100%;
     height: 100%;
+  }
+
+  #ux_knap1:hover,
+  #ux_knap2:hover {
+    animation: zoom_in_out_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
   }
 }
