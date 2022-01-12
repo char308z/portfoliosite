@@ -81,7 +81,7 @@ hr {
 }
 
 #bg_path {
-  background-image: url(billeder/om_mig_billeder/b1.svg);
+  background-image: url(../billeder/om_mig_billeder/b1.svg);
   background-size: cover;
   width: 100%;
   height: 100%;
